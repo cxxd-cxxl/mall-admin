@@ -1,0 +1,50 @@
+.home {
+    .menu-list {
+        width: 11.25rem;
+        position:fixed;
+        height: 100%;
+        .ant-menu {
+            height: 100%;
+        }
+    }
+    .main-app {
+        margin-left: 11.25rem;
+        transition: all 0.3s;
+        &.menu-unfold {
+            margin-left: 5rem;
+        }
+        .main-header {
+            height: 3.125rem;
+            line-height: 3.125rem;
+            border-bottom: .0625rem solid #eee;
+            padding-left: .625rem;
+            padding-right: 1.25rem;
+            .breadcrumb {
+                display: inline-block;
+                margin-left: 1.25rem;
+            }
+            .user-info{
+                float: right;
+                text-align-last: center;
+                cursor: pointer;
+                li:not(:first-child) {
+                    display: none;
+                    &:hover {
+                        background-color: #eee;
+                        color: #999;
+                        font-weight: 700;
+                    }
+                }
+                li {
+                    padding: 0 1.25rem;
+                }
+                &:hover {
+                    li {
+                        display: block;
+                    }
+                }
+            }
+
+        }
+    }
+}
